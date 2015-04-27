@@ -49,6 +49,12 @@ var willDropIn2 = Easing.tween({
   },
   // 5 seconds tween
   duration: 5000,
+
+  // use easeOutCubic method,
+  ease: Easing.easeOutCubic,
+
+  // or ease: 'easeOutCubic'
+
   // logging all updates
   onProgress: function (obj) {
     console.log(obj);
