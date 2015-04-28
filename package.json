@@ -1,6 +1,6 @@
 {
   "name": "ease-sential",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "'truly essential easing object with tween method included'",
   "main": "ease-sential.js",
   "scripts": {

@@ -26,7 +26,7 @@ var Easing = {
         to = options.to,
         easing = typeof options.ease === 'function' ?
           options.ease :
-          Easing[options.ease || Easing.default],
+          Easing[options.ease || Easing['default']],
         duration = options.duration || 1000,
         onProgress =  options.onprogress ||
                       options.onProgress ||
@@ -56,7 +56,7 @@ var Easing = {
   }()),
   'default': 'easeOutQuad',
   swing: function (t, b, c, d) {
-    return Easing[Easing.default](t, b, c, d);
+    return Easing[Easing['default']](t, b, c, d);
   },
   easeInQuad: function (t, b, c, d) {
     return c*(t/=d)*t + b;
